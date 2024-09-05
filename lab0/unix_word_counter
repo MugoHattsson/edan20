@@ -1,0 +1,1 @@
+tr -cs 'A-Za-z' '\n' < text_file | sort | uniq -c | sort -nr | more
