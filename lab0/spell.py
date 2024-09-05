@@ -91,8 +91,8 @@ def spelltest(tests, verbose=False):
                 print('correction({}) => {} ({}); expected {} ({})'
                       .format(wrong, w, WORDS[w], right, WORDS[right]))
     dt = time.process_time() - start
-    print('{:.0%} of {} correct ({:.0%} unknown) at {:.0f} words per second '
-          .format(good / n, n, unknown / n, n / dt))
+    print('{:.0%}, {} of {} correct ({:.0%} unknown) at {:.0f} words per second '
+          .format(good / n, good, n, unknown / n, n / dt))
     
 def Testset(lines):
     "Parse 'right: wrong1 wrong2' lines into [('right', 'wrong1'), ('right', 'wrong2')] pairs."
